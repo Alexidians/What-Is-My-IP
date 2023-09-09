@@ -4,7 +4,8 @@
 <script>
 var infobyip = open("https://infobyip.com")
 var ip = infobyip.document.querySelectorAll('h1');
-ip = ip[1].innerhtml
+ip = ip[1]
+ip = ip.innerhtml
 document.getElementById("ipAddress").innerhtml = document.getElementById("ipAddress").innerhtml + ip
 infobyip.close()
 </script>
