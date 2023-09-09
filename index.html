@@ -5,7 +5,7 @@
 var infobyip = open("https://infobyip.com")
 var ip = infobyip.document.querySelectorAll('h1');
 ip = ip[1]
-ip = ip.innerhtml
-document.getElementById("ipAddress").innerhtml = document.getElementById("ipAddress").innerhtml + ip
+ip = ip.innerHTML
+document.getElementById("ipAddress").innerhtml = document.getElementById("ipAddress").innerHTML + ip
 infobyip.close()
 </script>
