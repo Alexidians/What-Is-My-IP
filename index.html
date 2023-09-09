@@ -1,2 +1,9 @@
 <h1>Ip Data:</h1>
-<p>Ip Address:</p>
+<p id="ipAddress">Ip Address:</p>
+<script>
+var infobyip = open("https://infobyip.com")
+var ip = infobyip.document.querySelectorAll('h1');
+ip = ip[1].innerhtml
+document.getElementById("ipAddress").innerhtml = document.getElementById("ipAddress").innerhtml + ip
+infobyip.close()
+</script>
